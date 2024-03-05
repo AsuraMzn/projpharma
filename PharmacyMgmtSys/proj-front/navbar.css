@@ -1,0 +1,214 @@
+.nav-bar{
+    position: relative;
+    display: inline-flex;
+    background-color: #2980B9;
+    height: 80px;
+    width: 100%;
+    padding: 1% 10%;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+.logo{
+    height: 40px;
+    width: 10%;
+    border: 2px solid black;
+}
+
+.menu-bar{
+    height: 50px;
+    width: 40%;
+}
+
+.menu-bar ul { 
+    list-style: none; 
+    display: table;
+    width: 100%;
+    text-align: center;
+}
+
+.menu-bar li { 
+    display: table-cell; 
+    position: relative;
+}
+.menu-bar a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    font-weight: bold;
+
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+}
+.menu-bar a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.menu-bar a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+
+.search-bar{
+    display: inline-flex;
+    height: max-content;
+    width: 30%;
+}
+
+#searchbar{
+    height: 45px;
+    width: 80%;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+.search-btn{
+    height: 45px;
+    width: 20%;
+    border: 0px;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#log-out{
+    height: fit-content;
+    width: 10%;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 10px 2%;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#log-out:hover{
+    background: rgb(59, 119, 239);
+    color: white;
+    letter-spacing: 1px;
+}
+
+#profile-icon{
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* sub menu css */
+.sub-menu-wrap{
+    position: absolute;
+    top: 100%;
+    right: 10%;
+    z-index: 100;
+    width: 320px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.5s;
+}
+
+.sub-menu-wrap.open-menu{
+    max-height: 400px;
+}
+
+.sub-menu{
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+}
+
+.user-info span{
+    font-size: 50px;
+    margin-right: 20px;
+}
+
+.sub-menu hr{
+    border: none;
+    height: 2px;
+    background-color: black;
+    margin: 10px 0 20px;
+    width: 100%;
+}
+
+.sub-menu-link{
+    display: flex;
+    align-items: center;
+    color: #525252;
+    margin: 20px 0;
+    text-decoration: none;
+}
+
+.sub-menu-link p{
+    width: 100%;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link #icon{
+    width: 42px;
+    background-color: #e5e5e5;
+    border-radius: 50%;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.sub-menu-link span{
+    font-size: 22px;
+    transition: transform 0.5s;
+}
+
+.sub-menu-link:hover p{
+    font-weight: 600;
+    transform: translateX(5px);
+}
+
+.sub-menu-link:hover span{
+    transform: translateX(5px);
+}
+
+
+.add-to-cart{
+    position: relative;
+}
+
+#cartbtn{
+    font-size: 18px;
+    color: white;
+    border-radius: 50%;
+    padding: 8px;
+    border: 3px solid #fff;
+    cursor: pointer;
+}
+#cartnum{
+    position: absolute;
+    display: flex;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    top: 50%;
+    right: -20px;
+}

@@ -1,0 +1,133 @@
+*{
+    font-family: "Poppins";
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+a{
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+}
+
+.nav-bar{
+    position: fixed;
+    display: flex;    
+    padding: 0px 300px 0px 300px;
+    height: 80px;
+    width: 100%;
+    top: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    display: flex;
+    margin-left: 50px;
+    height: 50px;
+    width: 20%;
+    background-color: white;
+    color: black;
+    margin: 15px 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu-bar{
+    display: flex;
+    height: 50px;
+    width: 30%;
+    margin: 15px 30px;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+.menu-bar a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    display: inline-block;
+    padding: 10px 5px;
+    position: relative;
+}
+
+.menu-bar a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+.menu-bar a:hover:after { 
+    width: 100%; 
+    left: 0; 
+}
+
+body{
+    background:  url(login_img/bg.jpg) no-repeat;
+    background-size: 100% 50vh;
+}
+
+.header{
+    display: flex;
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    align-items: center;
+    justify-content: center;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.header h3{
+    position: absolute;
+    color: aliceblue;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    line-height: 5px;
+}
+
+.header p{
+    color: aliceblue;
+    text-align: center;
+    font-size: 80px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.content{
+    display: flex;
+    position: absolute;
+    background: white;
+    padding: 50px 20px 50px 50px;
+    height: 90vh;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    align-items: center;
+    justify-content: center;
+}
+
+.form{
+    display: flex;
+    position: absolute;
+    background: url(login_img/formbg.jpg) no-repeat;
+    background-size: cover;
+    padding: 50px 20px;
+    height: 80vh;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}

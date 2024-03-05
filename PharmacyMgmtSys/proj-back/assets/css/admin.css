@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scrollbar-width: none;
+}
+
+body{
+    background-color: #d0d3d0;
+}
+
+.sidebar{
+    height: 100dvh;
+    width: 20dvw;
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 20px 30px;
+    border: 1px solid black;
+    /* background-image: linear-gradient(to bottom, #3f7fd4, rgb(19, 30, 151)); */
+    background: rgb(2,0,36);
+    background: linear-gradient(315deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    /* background: rgb(21,17,80);
+    background: linear-gradient(346deg, rgba(21,17,80,1) 0%, rgba(22,41,150,1) 33%, rgba(25,63,198,1) 70%, rgba(79,139,255,1) 100%); */
+    /* background: rgb(16,11,87);
+    background: linear-gradient(320deg, rgba(16,11,87,1) 0%, rgba(22,41,150,1) 33%, rgba(25,63,198,1) 46%, rgba(0,255,249,1) 100%); */
+    color: white;
+}
+
+.sidebar .list h3{
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.sidebar .list .list-item{
+    line-height: 50px;
+}
+.sidebar .list .list-item .main-list{
+    position: relative;
+    list-style: none;
+    margin-top: 10px;
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+
+    transition: background-color .1s;
+    cursor: pointer;
+    transition: height .5s;
+}
+
+.sidebar .list .list-item .main-list.show{
+    height: 160px;
+    transition: height .5s;
+}
+
+.sidebar .list .list-item .main-list li{
+    border-radius: 5px;
+    height: 50px;
+    width: 100%;
+}
+
+.sidebar .list .list-item .main-list li a{
+    text-decoration: none;
+    margin-left: 30px;
+    color: white;
+}
+
+.sidebar .list .list-item .sub-list li a{
+    margin-left: 50px;
+}
+
+.sidebar .list .list-item li:hover{
+    background-color: rgba(255, 255, 255, 0.137);
+
+}
+
+.sidebar .list .list-item .sub-list{
+    list-style: none;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.sidebar .list .list-item span{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.container{
+    height: 100vh;
+    width: 80vw;
+
+    display: grid;
+    grid-template-rows: 10vh auto;
+    gap: 40px;
+    position: absolute;
+    right: 0;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+
+.container .table{
+    position: relative;
+    display: flex;
+    padding: 20px 30px;
+    margin: 5px 5px 10px 10px;
+
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    background: white;
+    color: black;
+    justify-content: center;
+    border-radius: 20px;
+    box-shadow: 0px -15px 10px -15px #111;    
+}
+
+.container .table .user-table{
+    height: 100%;
+    width: 100%;
+}
+
+.sidebar .list .list-item .logout{
+    display: flex;
+    text-decoration: none;
+    text-transform: uppercase;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    color: white;
+    background-color: blue;
+    margin-top: 10px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
